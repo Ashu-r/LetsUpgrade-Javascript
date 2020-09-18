@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Data</title>
+</head>
+
+<body>
+    <div class="search">
+        <input onkeyup="sname()" id="sname" type="text" placeholder="Search Name">
+        <input onkeyup="scity()" id="scity" type="text" placeholder="Search city">
+    </div>
+    <div>
+        <table id="data">
+            <thead>
+                <tr>
+                    <td> Sr no.</td>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                    <th>Salary</th>
+                    <th>Action</th>
+                </tr>
+            </thead> 
+        
+            <tbody id="list">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Local</title>
+</head>
+
+<body>
+    
+    <div class="enter">
+       <form onsubmit="addBus(event)">
+        <h3>Add bus</h3>
+   
+        <label for="name">Name</label><br>
+           <input required type="text" name="name"><br>
+           <label for="source">Source</label><br>
+           <input required type="text" name="source"><br>
+           <label for="destination">Destination</label><br>
+           <input required type="text" name="destination"><br>
+           <label for="number">Number</label><br>
+           <input required type="text" name="number"><br>
+           <label for="capacity">Passenger Capacity</label><br>
+           <input required type="text" name="capacity"><br>
+           <button type="submit">Add</button>
+       </form> 
+    </div>
+    <div class="search">
+        <input onkeyup="bsource()" id="bsource" type="text" placeholder="Search Source">
+        <input onkeyup="bdestination()" id="bdestination" type="text" placeholder="Search Destination">
+    </div>
+    <div>
+        <table id="data">
+            <thead>
+                <tr>
+                    <th> Sr no.</th>
+                    <th>Name</th>
+                    <th>Source</th>
+                    <th>Destination</th>
+                    <th>Number</th>
+                    <th>Passenger Capacity</th>
+                </tr>
+            </thead> 
+        
+            <tbody id="list">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
