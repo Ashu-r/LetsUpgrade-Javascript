@@ -1,0 +1,185 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    margin: 10px -5px;
+}
+
+.filter .search {
+    height: 50px;
+    width: 30%;
+    /* background-color: red; */
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.header {
+    height: 70px;
+    width: 100%;
+    background-color: lightgrey;
+    line-height: 70px;
+}
+
+h1 {
+    margin-left: 5%;
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+.search {
+    height: 70px;
+    width: 60%;
+    /* background-color: red; */
+    display: inline-block;
+}
+
+.search input {
+    height: 40px;
+    width: 100%;
+    text-indent: 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    outline: none;
+}
+
+.products {
+    width: 100%;
+    height: auto;
+    /* background-color: gray; */
+}
+
+.productwrapper {
+    height: auto;
+    width: 80%;
+    /* background-color: green; */
+    margin-left: 10%;
+    margin-bottom: 50px;
+}
+
+.product {
+    height: auto;
+    width: 25%;
+    /* background-color: red; */
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 6.25%;
+    border: 1px solid lightgray;
+}
+
+.prodimg {
+    height: 300px;
+    width: 100%;
+    /* background-color: yellow; */
+    overflow: hidden;
+}
+
+.product h3,
+.product p {
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.product p {
+    color: gray;
+}
+
+button {
+    padding: 10px;
+}
+
+
+
+/* SNACKBAR */
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden;
+    /* Hidden by default. Visible on click */
+    min-width: 250px;
+    /* Set a default minimum width */
+    margin-left: -125px;
+    /* Divide value of min-width by 2 */
+    background-color: #333;
+    /* Black background color */
+    color: #fff;
+    /* White text color */
+    text-align: center;
+    /* Centered text */
+    border-radius: 2px;
+    /* Rounded borders */
+    padding: 16px;
+    /* Padding */
+    position: fixed;
+    /* Sit on top of the screen */
+    z-index: 1;
+    /* Add a z-index if needed */
+    left: 50%;
+    /* Center the snackbar */
+    bottom: 30px;
+    /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible;
+    /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
